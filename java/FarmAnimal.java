@@ -1,3 +1,4 @@
+import java.util.Random;
 
 public abstract class FarmAnimal extends Render {
 
@@ -44,6 +45,14 @@ public abstract class FarmAnimal extends Render {
         return this.name;
     }
 
+    public boolean isHungry() {
+        return this.hungryPoint <= 5;
+    }
+
+    public boolean isStarving() {
+        return this.hungryPoint <= 0;
+    }
+
     public void becomeHungrier() {
         hungryPoint--;
     }
@@ -65,20 +74,23 @@ public abstract class FarmAnimal extends Render {
     }
 
     public void eat(Land _land) {
-        if ((!isHungry()) || (!l.getIsGrassGrown())) {
+        if ((!isHungry()) || (!_land.getIsGrassGrown())) {
             // not hungry
         } else {
-            hungryPoint = hungerTime;
-            l.setIsGrassGrown(false);
-            setProductReady(true);
+            hungryPoint = HUNGERTIME;
+            _land.setIsGrassGrown(false);
+            setIsProductReady(true);
         }
     }
 
     public void move(int _row, int _kol) {
-        int xMinus = rand() % 2; // xMove is negative number if xMinus = 1
-        int xMove = rand() % 2; // random between 0 and 1
-        int yMinus = rand() % 2; // yMove is negative number if yMinus = 1
-        int yMove = rand() % 2; // random between 0 and 1
+        Random r = new Random();
+        int Low = 0;
+        int High = 1;
+        int xMinus = r.nextInt(High - Low) + Low; // xMove is negative number if xMinus = 1
+        int xMove = r.nextInt(High - Low) + Low; // random between 0 and 1
+        int yMinus = r.nextInt(High - Low) + Low; // yMove is negative number if yMinus = 1
+        int yMove = r.nextInt(High - Low) + Low; // random between 0 and 1
 
         if (xMinus == 1) {
             xMove *= -1;
@@ -86,13 +98,13 @@ public abstract class FarmAnimal extends Render {
         if (yMinus == 1) {
             yMove *= -1;
         }
-        position.setX(position.getX() + xMove);
-        position.setY(position.getY() + yMove);
+        p.setX(p.getX() + xMove);
+        p.setY(p.getY() + yMove);
     }
 
     public void setPosition(Point p) {
-        position.setX(p.getX());
-        position.setY(p.getY());
+        p.setX(p.getX());
+        p.setY(p.getY());
     }
 
     public Point getPosition() {

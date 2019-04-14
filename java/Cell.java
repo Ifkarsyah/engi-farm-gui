@@ -1,6 +1,8 @@
 public class Cell extends Render {
     // Default constructor
     // set isOccupied to false, p = (0,0), string to empty string
+    Point p;
+
     public Cell() {
         p = new Point(0, 0);
     }
@@ -26,11 +28,15 @@ public class Cell extends Render {
 
     // GETTER
     // get Point;
-    Point getPoint() { return p; }
+    Point getPoint() {
+        return p;
+    }
 
     // SETTER
     // Set Point;
-    void setPoint(Point p) { this.p = p; }
+    void setPoint(Point p) {
+        this.p = p;
+    }
 
     // Note:
     // Cell still ABS, because it does not override Render::render()
