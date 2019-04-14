@@ -1,5 +1,11 @@
 package entities.animal;
 
+import entities.Renderable;
+import entities.cells.lands.Land;
+import entities.products.farms.DagingSapi;
+import entities.products.farms.FarmProduct;
+import entities.products.farms.SusuSapi;
+
 public class Sapi extends FarmAnimal implements Renderable, MilkProducingAnimal, MeatProducingAnimal {
 
     public Sapi(String _name) {
