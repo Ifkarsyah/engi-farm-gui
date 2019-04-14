@@ -17,8 +17,8 @@ public abstract class FarmAnimal extends Render {
         numOfFarmAnimal--;
     }
 
-    public static void addFarmAnimal() {
-        numOfFarmAnimal++;
+    public static void addFarmAnimal(int _init) {
+        numOfFarmAnimal = _init;
     }
 
     public static int getFarmAnimalNumber() {
