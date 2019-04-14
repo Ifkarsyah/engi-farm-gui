@@ -38,6 +38,9 @@ public class Cell implements Renderable {
         this.p = p;
     }
 
+    public char render() {
+        return 'X';
+    }
     // Note:
     // Cell still ABS, because it does not override Render::render()
 }
