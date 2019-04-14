@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public abstract class FarmAnimal extends Render {
+public abstract class FarmAnimal {
 
     protected String name;
     protected int hungryPoint;
