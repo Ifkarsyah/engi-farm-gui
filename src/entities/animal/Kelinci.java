@@ -1,5 +1,10 @@
 package entities.animal;
 
+import entities.Renderable;
+import entities.cells.lands.Land;
+import entities.products.farms.DagingKelinci;
+import entities.products.farms.FarmProduct;
+
 public class Kelinci extends FarmAnimal implements Renderable, MeatProducingAnimal {
 
     public Kelinci(String _name) {

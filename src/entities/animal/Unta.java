@@ -1,5 +1,11 @@
 package entities.animal;
 
+import entities.Renderable;
+import entities.cells.lands.Land;
+import entities.products.farms.DagingUnta;
+import entities.products.farms.FarmProduct;
+import entities.products.farms.SusuUnta;
+
 public class Unta extends FarmAnimal implements Renderable, MilkProducingAnimal, MeatProducingAnimal {
 
     public Unta(String _name) {
