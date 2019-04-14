@@ -1,7 +1,7 @@
 public class Sate extends SideProduct {
 
-    public Sate(int _price, String _type) {
-        super(_price, _type);
+    public Sate() {
+        super(1000000, "Sate");
         this.addProduct(new DagingAyam());
         this.addProduct(new DagingDomba());
         this.addProduct(new DagingBebek());
