@@ -1,5 +1,3 @@
-package entities;
-
 public class Ayam extends FarmAnimal implements Renderable, EggProducingAnimal, MeatProducingAnimal {
 
     public Ayam(String _name) {

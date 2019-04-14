@@ -1,5 +1,3 @@
-package entities;
-
 public class Sate extends SideProduct {
 
     public Sate(int _price, String _type) {

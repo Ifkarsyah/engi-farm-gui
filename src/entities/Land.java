@@ -1,7 +1,3 @@
-package entities;
-
-import entities.Cell;
-
 public class Land extends Cell {
     protected boolean isGrassGrown;
 

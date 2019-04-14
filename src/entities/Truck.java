@@ -1,5 +1,3 @@
-package entities;
-
 public class Truck extends Facility {
     private int cooldown_time;
 

@@ -1,9 +1,3 @@
-package entities;
-
-import entities.Product;
-import entities.List;
-
-
 public class SideProduct extends Product {
 
     protected List<Product> product_list;

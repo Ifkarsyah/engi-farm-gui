@@ -1,5 +1,3 @@
-package entities;
-
 public class Facility extends Cell {
     // Constructor
     public Facility(int _x, int _y) {

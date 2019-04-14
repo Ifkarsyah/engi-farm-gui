@@ -1,5 +1,3 @@
-package entities;
-
 public class Bebek extends FarmAnimal implements Renderable, EggProducingAnimal, MeatProducingAnimal {
 
     public Bebek(String _name) {

@@ -1,7 +1,3 @@
-package entities;
-
-import entities.List;
-
 public class Mixer extends Facility {
     // Constructor
     // Set position p to (_x,_y), isOccupied to true, category to "mixer",

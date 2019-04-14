@@ -1,5 +1,3 @@
-package entities;
-
 public abstract class Product {
     private int price;
     private String type;

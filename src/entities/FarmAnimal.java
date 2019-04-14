@@ -1,8 +1,3 @@
-package entities;
-
-
-import java.util.Random;
-
 public abstract class FarmAnimal {
 
     protected String name;

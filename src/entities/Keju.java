@@ -1,5 +1,3 @@
-package entities;
-
 public class Keju extends SideProduct {
 
     public Keju() {

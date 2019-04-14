@@ -1,9 +1,3 @@
-package entities;
-
-import entities.DagingKelinci;
-import entities.DagingUnta;
-import entities.TelurAyam;
-
 public class Burger extends SideProduct {
 
     public Burger() {

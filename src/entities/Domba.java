@@ -1,5 +1,3 @@
-package entities;
-
 public class Domba extends FarmAnimal implements Renderable, MeatProducingAnimal {
 
     public Domba(String _name) {

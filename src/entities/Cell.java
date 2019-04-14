@@ -1,8 +1,3 @@
-package entities;
-
-import entities.Point;
-import entities.Renderable;
-
 public class Cell implements Renderable {
     // Default constructor
     // set isOccupied to false, p = (0,0), string to empty string

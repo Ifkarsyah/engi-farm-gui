@@ -1,5 +1,3 @@
-package entities;
-
 public class Unta extends FarmAnimal implements Renderable, MilkProducingAnimal, MeatProducingAnimal {
 
     public Unta(String _name) {

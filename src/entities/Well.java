@@ -1,5 +1,3 @@
-package entities;
-
 public class Well extends Facility {
     private int water;
 
