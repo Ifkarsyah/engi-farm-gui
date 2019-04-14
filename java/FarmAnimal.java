@@ -116,8 +116,8 @@ public abstract class FarmAnimal {
 
     public abstract String makeSound();
 
-    public abstract FarmProduct getProduct();
+    // public abstract FarmProduct getProduct();
 
-    public abstract FarmProduct getAnimalMeat();
+    // public abstract FarmProduct getAnimalMeat();
 
 }
