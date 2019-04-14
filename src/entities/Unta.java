@@ -8,7 +8,7 @@ public class Unta extends FarmAnimal implements Renderable, MilkProducingAnimal,
         return name + ": Alhamdulillah!!!";
     }
 
-    public FarmProduct getAnimalMeat() {
+    public DagingUnta getAnimalMeat() {
         DagingUnta D = new DagingUnta();
         return D;
     }

@@ -118,7 +118,7 @@ public abstract class FarmAnimal {
         throw "NoProductException";
     }
 
-    publicFarmProduct getAnimalMeat() {
+    public FarmProduct getAnimalMeat() {
         throw "NoMeatException";
     }
 

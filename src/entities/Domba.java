@@ -8,6 +8,7 @@ public class Domba extends FarmAnimal implements Renderable, MeatProducingAnimal
         return name + ": HopHop";
     }
 
+    @Override
     public FarmProduct getAnimalMeat() {
         DagingDomba D = new DagingDomba();
         return D;
