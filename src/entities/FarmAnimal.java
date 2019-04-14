@@ -96,8 +96,8 @@ public abstract class FarmAnimal {
         if (yMinus == 1) {
             yMove *= -1;
         }
-        // p.setX(p.getX() + xMove);
-        // p.setY(p.getY() + yMove);
+        p.setX(p.getX() + xMove);
+        p.setY(p.getY() + yMove);
     }
 
     public void setPosition(Point p) {
@@ -114,8 +114,12 @@ public abstract class FarmAnimal {
 
     public abstract String makeSound();
 
-    // public abstract FarmProduct getProduct();
+    public FarmProduct getProduct() {
+        throw "NoProductException";
+    }
 
-    // public abstract FarmProduct getAnimalMeat();
+    publicFarmProduct getAnimalMeat() {
+        throw "NoMeatException";
+    }
 
 }
