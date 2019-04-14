@@ -18,7 +18,7 @@ public class List<T> {
     // Mengembalikan indeks dimana elemen ditemukan, -1 jika tidak ada
     public int find(T el) {
         for (int i = 0; i < arr.size(); i++) {
-            if (arr.get(i) == el) {
+            if (arr.get(i).getClass() == el.getClass()) {
                 return i;
             }
         }
@@ -35,7 +35,8 @@ public class List<T> {
 
     // Membuang elemen pertama dari linked list sama
     public void remove(T el) {
-        arr.remove(el);
+        int id = find(el);
+        arr.remove(id);
     }
 
     // Mengembalikan elemen p
