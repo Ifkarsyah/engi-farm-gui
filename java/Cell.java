@@ -1,4 +1,4 @@
-public class Cell extends Render {
+public class Cell implements Renderable {
     // Default constructor
     // set isOccupied to false, p = (0,0), string to empty string
     Point p;
