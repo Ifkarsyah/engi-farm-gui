@@ -1,26 +1,27 @@
 package entities.player;
 
+import entities.Point;
 import entities.cells.facilities.Truck;
 import entities.cells.facilities.Well;
-import entities.products.Products;
+import entities.products.Product;
 
-import java.awt.*;
+
 import java.util.LinkedList;
 
 public class Player {
     private Point point;
-    private LinkedList<Products> inventory;
+    private LinkedList<Product> inventory;
     private int water;
     private int money;
 
     public Player(Point point, int water) {
         this.point = point;
-        this.inventory = new LinkedList<Products>();
+        this.inventory = new LinkedList<Product>();
         this.water = water;
     }
 
 
-    public LinkedList<Products> getInventory() { return inventory; }
+    public LinkedList<Product> getInventory() { return inventory; }
     public int getWater() { return water; }
     public void setWater(int water) { this.water = water; }
     public int getMoney() { return money; }
@@ -32,6 +33,20 @@ public class Player {
     }
 
     public void interact(Truck truck){
-        while ()
+        while (inventory.size() > 0) {
+            Product prod = inventory.pop();
+            money += prod.getPrice();
+        }
+        truck.setCooldownTime(30);
     }
+
+    public void interact(){}
+
+    public void kill(){}
+
+    public void talk(){}
+
+    public void grow(){}
+
+    public void moveUp(){}
 }

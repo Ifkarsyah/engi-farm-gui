@@ -1,3 +1,5 @@
+package entities.cells.lands;
+
 public class Grassland extends Land {
     // Constructor
     // Point p to (_x,_y), category to Grassland, IsOccupied to 0

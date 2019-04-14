@@ -1,3 +1,5 @@
+package entities.cells.lands;
+
 public class Coop extends Land {
     // Constructor
     // Point p to (_x,_y), category to Coop, IsOccupied to 0

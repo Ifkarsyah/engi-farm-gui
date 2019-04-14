@@ -1,3 +1,10 @@
+package entities.animal;
+
+import entities.Renderable;
+import entities.cells.lands.Land;
+import entities.products.farms.DagingAyam;
+import entities.products.farms.FarmProduct;
+import entities.products.farms.TelurAyam;
 
 public class Ayam extends FarmAnimal implements Renderable, EggProducingAnimal, MeatProducingAnimal {
 

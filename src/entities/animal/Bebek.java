@@ -1,3 +1,11 @@
+package entities.animal;
+
+import entities.Renderable;
+import entities.cells.lands.Land;
+import entities.products.farms.DagingBebek;
+import entities.products.farms.FarmProduct;
+import entities.products.farms.TelurBebek;
+
 public class Bebek extends FarmAnimal implements Renderable, EggProducingAnimal, MeatProducingAnimal {
 
     public Bebek(String _name) {

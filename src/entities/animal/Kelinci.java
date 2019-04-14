@@ -1,3 +1,5 @@
+package entities.animal;
+
 public class Kelinci extends FarmAnimal implements Renderable, MeatProducingAnimal {
 
     public Kelinci(String _name) {

@@ -1,3 +1,7 @@
+package entities.cells.lands;
+
+import entities.cells.Cell;
+
 public class Land extends Cell {
     protected boolean isGrassGrown;
 

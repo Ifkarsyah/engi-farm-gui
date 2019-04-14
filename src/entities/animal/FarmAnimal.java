@@ -1,3 +1,9 @@
+package entities.animal;
+
+import entities.Point;
+import entities.cells.lands.Land;
+
+
 import java.util.Random;
 
 public abstract class FarmAnimal {
@@ -98,8 +104,8 @@ public abstract class FarmAnimal {
         if (yMinus == 1) {
             yMove *= -1;
         }
-        p.setX(p.getX() + xMove);
-        p.setY(p.getY() + yMove);
+        // p.setX(p.getX() + xMove);
+        // p.setY(p.getY() + yMove);
     }
 
     public void setPosition(Point p) {

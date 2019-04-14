@@ -1,3 +1,5 @@
+package entities.cells.lands;
+
 public class Barn extends Land {
     // Constructor
     // Point p to (_x,_y), IsOccupied to 0

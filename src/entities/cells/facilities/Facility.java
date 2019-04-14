@@ -1,11 +1,11 @@
 package entities.cells.facilities;
 
-import entities.cells.Cells;
+import entities.cells.Cell;
 
-import java.awt.*;
-
-public abstract class Facility extends Cells {
-    public Facility(Point point) { super(point); }
-
-
+public class Facility extends Cell {
+    // Constructor
+    public Facility(int _x, int _y) {
+        super(_x, _y);
+        System.out.println("Facility Created");
+    }
 }

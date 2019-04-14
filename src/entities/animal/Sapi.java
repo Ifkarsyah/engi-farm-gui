@@ -1,3 +1,4 @@
+package entities.animal;
 
 public class Sapi extends FarmAnimal implements Renderable, MilkProducingAnimal, MeatProducingAnimal {
 

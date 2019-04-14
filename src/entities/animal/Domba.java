@@ -1,3 +1,10 @@
+package entities.animal;
+
+import entities.Renderable;
+import entities.cells.lands.Land;
+import entities.products.farms.DagingDomba;
+import entities.products.farms.FarmProduct;
+
 public class Domba extends FarmAnimal implements Renderable, MeatProducingAnimal {
 
     public Domba(String _name) {
