@@ -69,7 +69,7 @@ public abstract class FarmAnimal {
         return isProductReady;
     }
 
-    public boolean setIsProductReady(boolean _isProductReady) {
+    public void setIsProductReady(boolean _isProductReady) {
         isProductReady = _isProductReady;
     }
 
