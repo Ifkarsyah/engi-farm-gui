@@ -10,12 +10,12 @@ public class Ayam extends FarmAnimal implements Renderable, EggProducingAnimal, 
     }
 
     public FarmProduct getAnimalMeat() {
-        DagingAyam D = DagingAyam();
+        DagingAyam D = new DagingAyam();
         return D;
     }
 
     public FarmProduct getProduct() {
-        TelurAyam T = TelurAyam();
+        TelurAyam T = new TelurAyam();
         setIsProductReady(false);
         return T;
     }

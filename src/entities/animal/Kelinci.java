@@ -9,7 +9,7 @@ public class Kelinci extends FarmAnimal implements Renderable, MeatProducingAnim
     }
 
     public FarmProduct getAnimalMeat() {
-        DagingKelinci D = DagingKelinci();
+        DagingKelinci D = new DagingKelinci();
         return D;
     }
 

@@ -9,12 +9,12 @@ public class Bebek extends FarmAnimal implements Renderable, EggProducingAnimal,
     }
 
     public FarmProduct getAnimalMeat() {
-        DagingBebek D = DagingBebek();
+        DagingBebek D = new DagingBebek();
         return D;
     }
 
     public FarmProduct getProduct() {
-        TelurBebek T = TelurBebek();
+        TelurBebek T = new TelurBebek();
         setIsProductReady(false);
         return T;
     }

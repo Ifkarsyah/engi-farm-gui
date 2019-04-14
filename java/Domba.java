@@ -9,7 +9,7 @@ public class Domba extends FarmAnimal implements Renderable, MeatProducingAnimal
     }
 
     public FarmProduct getAnimalMeat() {
-        DagingDomba D = DagingDomba();
+        DagingDomba D = new DagingDomba();
         return D;
     }
 

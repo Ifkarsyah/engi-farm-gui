@@ -10,12 +10,12 @@ public class Sapi extends FarmAnimal implements Renderable, MilkProducingAnimal,
     }
 
     public FarmProduct getAnimalMeat() {
-        DagingSapi D = DagingSapi();
+        DagingSapi D = new DagingSapi();
         return D;
     }
 
     public FarmProduct getProduct() {
-        SusuSapi T = SusuSapi();
+        SusuSapi T = new SusuSapi();
         setIsProductReady(false);
         return T;
     }
